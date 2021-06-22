@@ -14,7 +14,8 @@ contract HelloWorld {
     return message;
   }
 
-  function setMessage(string memory _message) public {
+  function setMessage(string memory _message) public payable {
+    require(msg.value > 1 ether);
     message = _message;
   }
 }
