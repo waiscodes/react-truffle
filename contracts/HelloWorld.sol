@@ -15,6 +15,10 @@ contract HelloWorld {
         return message;
     }
 
+    function akkam() public pure returns (string memory) {
+        return "fayya";
+    }
+
     function setMessage(string memory _message) public {
         require(msg.sender == owner, "You're not that guy pal");
         message = _message;
