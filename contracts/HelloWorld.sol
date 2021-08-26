@@ -6,7 +6,7 @@ contract HelloWorld {
     string public message;
     address owner;
 
-    constructor(string memory _message) public {
+    constructor(string memory _message) {
         message = _message;
         owner = msg.sender;
     }
