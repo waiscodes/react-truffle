@@ -6,6 +6,11 @@ contract HelloWorld {
     string public message;
     address owner;
 
+    struct Bunna {
+        string name;
+        uint256 dna;
+    }
+
     constructor(string memory _message) {
         message = _message;
         owner = msg.sender;
