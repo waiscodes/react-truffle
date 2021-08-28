@@ -11,6 +11,8 @@ contract HelloWorld {
         uint256 dna;
     }
 
+    Bunna[] public bunnien;
+
     constructor(string memory _message) {
         message = _message;
         owner = msg.sender;
